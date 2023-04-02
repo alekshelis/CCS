@@ -1,0 +1,15 @@
+
+input.error {
+	border-color: $carnation;
+}
+label.error {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+
+    @include font (rem($font-size-super-super-small), $font-weight-regular);
+    line-height: 160%;
+
+	color: $carnation;  
+}       

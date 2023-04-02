@@ -1,0 +1,14 @@
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: rem($width-container + 2 * $gap-container);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: rem($gap-container);
+    padding-left: rem($gap-container);
+    gap: rem(20px);
+
+    @media #{$screen-tablet} {
+        padding-right: rem(20px);
+    }
+}

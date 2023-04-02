@@ -1,0 +1,26 @@
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: rem(54px);
+
+    margin-bottom: rem(10px);
+    padding: 0 rem(20px);
+    border-bottom: rem(1px) solid $colr-icon-header-boder;
+
+    background-color: $white;
+
+    &__title {
+        @include font (rem($font-size-super-normal), $font-weight-medium);
+
+        margin: 0;
+    }
+
+    &__icon {
+        width: rem(24px);
+        height: rem(24px);
+
+        color: $colr-icon-header-menu;
+    }
+}

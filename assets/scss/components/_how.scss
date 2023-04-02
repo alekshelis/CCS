@@ -1,0 +1,148 @@
+.how {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: rem(50px);
+    padding-bottom: rem(80px);
+
+    @media #{$screen-tablet} {
+        padding-top: rem(100px)
+    }
+
+    @media #{$screen-desktop} {
+        padding-top: rem(150px)
+    }
+
+    &__title {
+        @include font (rem($font-size-20), 800);
+        line-height: rem(43px);
+
+        padding-bottom: rem(20px);
+
+        color: $white;
+
+        @media #{$screen-tablet} {
+            @include font (rem($font-size-36), 800);
+
+            padding-bottom: rem(30px);
+        }
+
+        span {
+            color: $curious-blue-ccs1;
+        }
+    }
+
+    &__subtitle {
+        @include font (rem($font-size-13), 400);
+        line-height: rem(22px);
+
+        margin: 0;
+        padding-bottom: rem(40px);
+
+        color: $how-subtitle;
+
+        @media #{$screen-tablet} {
+            @include font (rem($font-size-18), 400);
+        }
+
+        @media #{$screen-desktop} {
+        padding-bottom: rem(80px);
+
+        }
+    }
+
+    &__items {
+        display: grid;
+
+        gap: rem(50px);
+        
+        @media #{$screen-desktop} {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            gap: rem(48px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &:last-child {
+            .how__icon-row {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__icon-row {
+        position: relative;
+
+        width: rem(100px);
+        height: rem(100px);
+
+        border-radius: 50%;
+        border: rem(5px) solid $how-border-icon-row;
+
+        background: $curious-blue-ccs1;
+
+        &::before {
+            display: none;
+
+            position: absolute;
+            top: 50%;
+            left: 120%;
+
+            width: rem(110px);
+            height: rem(6px);
+
+            transform: translateY(-50%);
+
+            content: "";
+
+            background-image: url(./public/images/icons/how-dots.svg);
+
+        }
+
+        @media #{$screen-desktop} {
+            &::before {
+                display: block;
+            }
+        }
+
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(90%, 90%);
+
+        width: rem(33px);
+        height: rem(33px);
+    }
+
+    &__text{
+        @include font (rem($font-size-13), 400);
+        line-height: rem(19px);
+
+        margin: 0;
+        padding-top: rem(10px);
+
+        text-align: center;
+        width: 188px;
+
+        color: $white;
+
+        @media #{$screen-tablet} {
+            @include font (rem($font-size-16), 400);
+
+            padding-top: rem(20px);
+        }
+    }
+}

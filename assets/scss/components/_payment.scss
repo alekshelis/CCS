@@ -1,0 +1,51 @@
+.payment {
+    width: 100%;
+    padding: rem(20px) 0;
+    border-bottom: rem(1px) solid #C3C3C3;
+
+    @media #{$screen-desktop} {
+        border-bottom: none;
+        border-left: rem(1px) solid #C3C3C3;
+        padding: 0;
+        padding-left: rem(36px);
+    }
+
+    &__items {
+        display: grid;
+        gap: rem(10px);
+
+        margin: 0;
+        padding: 0;
+
+        @media #{$screen-tablet} {
+            display: flex;
+            justify-content: flex-start;
+            gap: rem(42px);
+        }
+
+        @media #{$screen-desktop} {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(13px);
+
+        @media #{$screen-tablet} {
+            display: flex;
+        }
+    }   
+    
+
+    &__text {
+        @include font (rem($font-size-13), 400);
+        line-height: rem(16px);
+
+        margin: 0;
+
+        color: #C3C3C3;
+    }
+}

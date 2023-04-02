@@ -1,0 +1,58 @@
+.contacts {
+    width: 100%;
+    padding-bottom: rem(20px);
+    border-bottom: rem(1px) solid #C3C3C3;
+
+    @media #{$screen-desktop} {
+        border: none;
+        padding: 0;
+        border-left: 0.0625rem solid #c3c3c3;
+        padding-left: rem(36px);
+    }
+
+    &__items {
+        display: grid;
+        gap: rem(10px);
+
+        margin: 0;
+        padding: 0;
+
+        @media #{$screen-tablet} {
+            display: flex;
+            justify-content: flex-start;
+            gap: rem(42px);
+        }
+
+        @media #{$screen-desktop} {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(13px);
+
+        @media #{$screen-tablet} {
+            display: flex;
+        }
+    }   
+    
+
+    &__link {
+        @include font (rem($font-size-13), 400);
+        line-height: rem(16px);
+
+        color: $white;
+
+        text-decoration: none;
+
+        transition: $transition;
+
+        &:hover {
+            text-decoration: none;
+            color: $curious-blue-ccs;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.main-form {
+    display: grid;
+    gap: rem(20px);
+
+    padding-bottom: rem(150px);
+
+    @media #{$screen-tablet} {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(30px);
+    }
+}
+

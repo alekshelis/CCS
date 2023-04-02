@@ -1,0 +1,49 @@
+.header {
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        max-height: rem(100px);
+        padding: rem(32px) 0;
+    }
+
+    &__logo {
+        font-family: $font-family1;
+        @include font ($font-size-small, 800);
+        text-transform: uppercase;
+        line-height: rem(33px);
+        text-decoration: none;
+
+        color: $white;
+
+        cursor: pointer;
+
+        @media #{$screen-tablet} {
+            @include font ($font-size-super-large, 800);
+        }
+
+
+        span {
+            color: $curious-blue-ccs;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__burgerbtn {
+        @media #{$screen-desktop} {
+            display: none;
+        }
+
+        &-icon {
+            width: rem(20px);
+            height: rem(14px);
+
+            color: $curious-blue-ccs;
+        }
+    }
+}

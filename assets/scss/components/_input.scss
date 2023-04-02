@@ -1,0 +1,110 @@
+.input-text {
+    position: relative;
+
+    &__input {
+      @include font (rem($font-size-18), 400);
+      line-height: rem(22px);
+
+      -webkit-appearance: none;
+      appearance: none;
+      -webkit-tap-highlight-color: $black;
+      color: $bunker;
+      outline: none;
+
+      width: 100%;
+      padding: rem(12px) rem(10px);
+      border: rem(1px) solid $white;
+      border-radius: rem(3px);
+      background: rgba(255, 255, 255, 0.85);
+
+      &:focus {
+        border: rem(1px) solid $curious-blue-ccs;
+      }
+
+      
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $section2-bg;
+        opacity: 1; /* Firefox */
+      }
+  
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $hather;
+      }
+
+      &--error {
+        position: relative;
+        color: $carnation;
+
+        &:invalid {
+          border-color: $carnation;
+        }
+      }
+    }  
+}
+
+.input {
+  &__wrapper {
+    position: relative;
+
+    text-align: center;
+
+    width: 100%;
+  }
+
+  &__file {
+    position: absolute;
+
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__file-icon-wrapper {
+    height: rem(20px);
+    width: rem(17px);
+    margin-right: rem(10px);
+  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &__file-button {
+    @include font (rem($font-size-15), 600);
+    line-height: rem(18px);
+    text-transform: uppercase;
+  
+    width: 100%;
+    height: rem(48px);
+    border-radius: rem(3px);
+  
+    border: rem(2px) solid $curious-blue-ccs1;
+    background: $white;
+    color: $bunker;
+  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  
+    cursor: pointer;
+  }
+}
+ 
+
+ 
+
+ 

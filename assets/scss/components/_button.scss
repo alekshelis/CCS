@@ -1,0 +1,67 @@
+.button {
+    @include font (rem($font-size-small), $font-weight-medium);
+
+    border: 0;
+    outline: none;
+
+    transition: $transition;
+
+    cursor: pointer;
+
+    &--regular {
+        text-align: center;
+       
+        padding: rem(16px) rem(30px);
+        border-radius: $border-radius-medium;
+
+        background-color: $curious-blue;
+        color: $white;
+
+        &:hover {
+            background-color: $wild-blue-yonder;
+        }
+
+        &:disabled {
+            background-color: $athens-gray;
+            color: $hather;
+
+            cursor: default;
+        }
+
+        &:active {
+            background-color: $wild-blue-yonder;
+            opacity: 0.5;
+        }
+    }
+
+    &--noBackground {
+        @include font (rem($font-size-small), $font-weight-medium);
+        line-height: 130%;
+        text-align: right;
+
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: none;
+
+        background-color: transparent;
+        color: $curious-blue;
+
+        &:hover {
+            color: $wild-blue-yonder;
+        }
+
+        &:active {
+            color: $wild-blue-yonder;
+            opacity: 0.5;
+        }
+
+        &:disabled {
+            color: $hather;
+            opacity: 0.5;
+
+            cursor: default;
+        } 
+    }   
+}
+

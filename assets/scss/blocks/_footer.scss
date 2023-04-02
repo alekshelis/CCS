@@ -1,0 +1,48 @@
+.footer {
+    height: auto;
+    padding: rem(20px) 0;
+    background: $bg-footer;
+
+    @media #{$screen-desktop} {
+        padding: rem(30px) 0;
+    }
+
+    &__row {
+        @media #{$screen-desktop} {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
+    &__icon {
+        width: rem(20px);
+        height: rem(20px);
+
+        color: $curious-blue-ccs1;
+    }
+
+    &__reserved {
+        @include font (rem($font-size-13), 400);
+        line-height: rem(16px);
+
+        flex-wrap: nowrap;
+
+        padding-top: rem(20px);
+
+        color: $white;
+
+        @media #{$screen-tablet} {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        @media #{$screen-desktop} {
+            padding: 0;
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.select {
+    position: relative;
+
+
+    .select2-container {
+        .select2-selection {
+            &::after {
+                position: absolute;
+                top: 0;
+                right: rem(10px);
+                bottom: 0;
+
+                display: block;
+
+                width: rem(16px);
+                height: rem(16px);
+                margin-top: auto;
+                margin-bottom: auto;
+
+                content: "";
+                transition: $transition;
+
+                background-image: url(./public/images/icons/select-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+
+            }
+        }
+    }
+
+    .select2-container--default {
+        .select2-selection--single {
+            height: rem(48px);
+            display: flex;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.85);
+            border: rem(1px) solid $white; 
+            
+            &:focus {
+                background: rgba(61, 64, 80, 0.85);
+                border: rem(1px) solid $curious-blue-ccs; 
+                
+                .select2-selection__placeholder {
+                    color: $white;
+                }
+                .select2-selection::after {
+                    color: $white;
+                }
+            }
+        }
+
+        .select2-selection__placeholder {
+            font-size: rem(18px);
+
+            color: $section2-bg;
+        }
+
+        .select2-selection__rendered {
+            font-size: rem(18px);
+            line-height: rem(34px);
+
+            padding: rem(12px) rem(10px);
+
+            color: $section2-bg;
+        }
+
+        .select2-selection__arrow {
+            display: none;
+        }
+    }
+    
+    .select2-search--dropdown {
+        display: none;
+    }
+
+    .select2-dropdown {
+
+        background-color: rgba(39, 39, 51, 1);
+        border: rem(1px) solid #3D4050;  
+    }
+
+    .select2-results > .select2-results__options {
+
+        max-height: rem(160px);
+
+        color: $white;
+    }
+
+    .select2-results__option {
+        padding: rem(12px) rem(10px);
+        font-size: rem(18px);
+
+        &[aria-selected=true], 
+        &--highlighted[aria-selected] {
+            color: $curious-blue-ccs;
+            background-color: rgba($slate-dray, .05);
+        }
+
+        &[aria-selected=true] {
+            cursor: default;
+        }
+    }
+
+    .select2-results__option--selected {
+        font-weight: 400;
+
+        color: $curious-blue-ccs !important;
+        background-color: transparent;
+    }
+
+    &__control {
+        width: 100%;
+        height: rem(50px);
+        padding: rem(12px) rem(10px);
+
+        border: rem(1px) solid $athens-gray; 
+        border-radius: rem($border-radius-medium);
+        background-color: transparent;
+    }
+
+    .select2-container {
+        width: 100% !important;
+
+        &.select2 {
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &.select2-container--open {
+            .select2-selection {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .select2-selection--single {
+                border: rem(1px) solid $slate-dray;
+                border-bottom: 0;
+            }
+        }
+
+        .select2-container--default {
+            .select2-selection--single {
+                .select2-selection__placeholder {
+                    line-height: rem(15px);
+
+                    display: block;
+                    overflow: hidden;
+
+                    white-space: normal;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+.select2-results__options::-webkit-scrollbar-track {
+  background-color: #3D4050;
+  border-radius: rem(3px);
+  margin: rem(3px);
+}
+.select2-results__options::-webkit-scrollbar {
+  width: rem(7px);
+  background: transparent;
+}
+.select2-results__options::-webkit-scrollbar-thumb {
+  border-radius: rem(3px);
+  background: $curious-blue-ccs1;
+}

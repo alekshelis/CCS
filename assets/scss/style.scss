@@ -1,0 +1,52 @@
+/**
+* Vendors
+*/
+// @import "~plugin-name.scss";
+@import "~normalize.css";
+@import '~select2/dist/css/select2.css';
+
+
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+
+
+
+/*
+* Components
+*/
+@import "components/button";
+@import "components/input";
+@import "components/icon";
+@import "components/menu-header";
+@import "components/select";
+@import "components/main-form";
+@import "components/section1";
+@import "components/section2";
+@import "components/how";
+@import "components/range";
+@import "components/contacts";
+@import "components/payment";
+@import "components/validation";
+
+
+// @import "components/my-block";
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/conteiner";
+@import "blocks/aside";
+@import "blocks/content";
+
+

@@ -1,0 +1,122 @@
+/**
+* Colors
+*/
+
+$outer-space: #202f2f;
+$bunker: #121920;
+
+$slate-dray: #768298;
+$hather: #BBC4D6;
+$wild-blue-yonder: #6680AE;
+$athens-gray: #EBEBF1;
+$curious-blue: #34AADD;
+$carnation: #F95A59;
+$background-blockquote: #FAFAFA;
+$curious-blue-active: #34AADD;
+$label-input-color: #4B4B4B;
+$colr-icon-header-menu: #37A7DF;
+$colr-icon-header-boder: #e0e4ed;
+$colr-background-filer: #14142c;
+
+$curious-blue-ccs: #42A9ED;
+$black: #000000;
+$white: #FFFFFF;
+$curious-blue-ccs1: #3E9CDC;
+$section2-bg: #272733;
+$how-subtitle: #BBBBBB;
+$how-border-icon-row: #286690;
+$bg-footer: #3D4050;
+
+$color-text: $outer-space;
+
+
+
+/**
+* Fonts
+*/
+
+
+$font-path: "./public/fonts";
+
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Lato";
+$font-family-custom1: "Raleway";
+
+$font-family: $font-family-custom, $font-family-default;
+$font-family1: $font-family-custom1, $font-family-default;
+$font-size: 16px;
+
+$font-size-base: 16px;
+
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$font-size-48: 48px;
+$font-size-36: 36px;
+$font-size-30: 30px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-15: 15px;
+$font-size-13: 13px;
+
+$font-size-superHuge: 36px;
+$font-size-huge: 30px;
+$font-size-super-large: 28px;
+$font-size-large: 24px;
+$font-size-medium: 20px;
+$font-size-super-normal: 18px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+$font-size-super-small: 12px;
+$font-size-super-super-small: 10px;
+
+$line-height-medium: 26px;
+
+
+/**
+* Breakpoints
+*/
+
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1440px)';
+
+
+/**
+* Layout
+*/
+$width-container: 1166px;
+$gap-container: 20px;
+
+
+/**
+* Sizes
+*/
+
+
+
+
+/**
+* Transitions and Animations
+*/
+$transition: all 0.3s;
+
+
+/**
+* Radius
+*/
+$border-radius-medium: 4px;
+
+
+
+/**
+* Box-shadows
+*/
+
+
+
+/**
+* Z-indexes
+*/
+$z-index-header: 50;
+

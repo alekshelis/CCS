@@ -1,0 +1,70 @@
+.range {
+
+    @media #{$screen-tablet} {
+        grid-column: span 2;
+    }
+
+    &__content {
+        display: grid;
+        gap: rem(10px);
+
+        padding-bottom: rem(10px);
+
+        @media #{$screen-tablet} {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        @include font (rem($font-size-18), 400);
+        line-height: rem(22px);
+
+        color: $white;
+
+        margin: 0;
+
+        b {
+            @include font (rem($font-size-18), 400);
+            line-height: rem(22px);
+
+            color: $white;
+        }
+    }
+
+    &__line {
+        height: rem(6px);
+        width: 100%;
+        appearance: none;
+
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: rem(10px);
+
+        &::-webkit-slider-thumb {
+            height: rem(23px);
+            width: rem(23px);
+            
+            border: rem(3px) solid #286690;
+            border-radius: 50%;
+            background: $curious-blue-ccs;
+
+            appearance: none;
+
+            cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+            height: rem(23px);
+            width: rem(23px);
+            
+            border: rem(3px) solid #286690;
+            border-radius: 50%;
+            background: $curious-blue-ccs;
+
+            appearance: none;
+
+            cursor: pointer;
+        }
+    }
+}
